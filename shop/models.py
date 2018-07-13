@@ -6,7 +6,7 @@ class Product(models.Model):
     title = models.CharField(max_length=100)
     platform = models.CharField(max_length=100)
     category = models.CharField(max_length=100)
-    image = models.ImageField()
+    image = models.ImageField(blank=True, null=True, upload_to="covers/")
     price = models.FloatField()
     description = models.TextField()
 
