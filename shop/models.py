@@ -9,6 +9,7 @@ class Product(models.Model):
     image = models.ImageField(blank=True, null=True, upload_to="covers/")
     price = models.FloatField()
     description = models.TextField()
+    created_date = models.DateTimeField(default=timezone.now)
 
     def publish(self):
         self.save()
