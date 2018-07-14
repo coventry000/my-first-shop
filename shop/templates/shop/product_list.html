@@ -1,3 +1,5 @@
+{% load staticfiles %}
+
 <!DOCTYPE HTML>
 
 <html lang="pl">
@@ -6,39 +8,91 @@
 	<meta charset="utf-8" />
 	<meta name="keywords" content = "programming, shop, website, page" />
 	<meta name="description" content="This is shop working on django. Click and see it" />
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 	
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+	<link rel="stylesheet" href="{% static 'css/fontello/css/fontello.css' %}" type="text/css" />
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous" />
+	
+	<link rel="stylesheet" href="{% static 'css/shop.css' %}" / type="text/css" />
 </head>
 
 <body>
 	<main>
+		<div class="container-fluid topnav-container" >
+				<div class = "row">
+						<div class="col-12 col-md-12 logo">
+							<header>
+								<h1>Games-Shop</h1>
+							</header>
+						</div>
+						
+						<div class="col-12 col-md-12 topnav">
+							<a href="#"><h5>Your cart is empty <i class="icon-basket"></i></h5></a>
+							
+						</div>
+				</div>
+		</div>
+			
+	
 		<div class="container">
 			<div class="row">
-				<div class="col-12 col-md-12">
-					<header>
-						<h1>Lorem Ipsum si the le more</h1>
-					</header>
+			
+			
+			<div class="col-12 col-md-3 left">
+				<div class="row">
+				<div class ="col-md-12">
+					<h4>Categories</h4>
+					
+					<ul>
+						<a href="#"><li>Action</li></a>
+						<a href="#"><li>Racing</li></a>
+						<a href="#"><li>Fighting</li></a>
+						<a href="#"><li>Simulation</li></a>
+						<a href="#"><li>Shooter</li></a>
+						<a href="#"><li>FPS</li></a>
+						<a href="#"><li>Logic</li></a>
+						
+						<h4>Platform</h4>
+					
+					<ul>
+						<a href="#"><li>Action</li></a>
+						<a href="#"><li>Racing</li></a>
+						<a href="#"><li>Fighting</li></a>
+						<a href="#"><li>Simulation</li></a>
+						<a href="#"><li>Shooter</li></a>
+						<a href="#"><li>FPS</li></a>
+						<a href="#"><li>Logic</li></a>
+					</ul>
 				</div>
+				</div>
+			</div>
+			
 
-              <div class="col-md-6">
+              <div class="col -12 col-md-9 right">
              <div class="row">
+				<div class="col-md-12 header-products">
+					<h4>Games</h4>
+				</div>
                 {% for product in products %}
-                        <div class="col-12 col-md-4">
-                            <img src="{{ product.image.url }}" class="img-fluid" />
-                            <br/>
+                        <div class="col-12 col-md-4 coverbox" >
+							
+							<div class="cover">
+								<img src="{{ product.image.url }}" class="img-fluid" />
+							</div>
+                            
                             <h4>{{ product.title }}</h4>
-                            {{ product.platform }}
-                            <br/>
-                            {{ product.category }}
+                            {{ product.platform }}/{{ product.category }}
                             <br/>
                             {{ product.price }}zł
-                        </div>
+                        
+						
+						</div>
 				{% endfor %}
              </div>
               </div>
-
-			</div>
+			
+			
+			  </div>
 		</div>
 	</main>
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

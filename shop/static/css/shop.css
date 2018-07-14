@@ -1,0 +1,73 @@
+.topnav-container{
+	margin-bottom: 50px;
+}
+
+.logo{
+text-align: left;
+}
+
+.topnav{
+	background-color: #D0D0D0;
+	height: 50px;
+}
+
+.topnav h5{
+	text-align: right;
+	line-height: 230%;
+}
+
+.topnav a{
+	text-decoration: none;
+	color: black;
+}
+
+.topnav a:hover{
+	color: orange;
+	text-shadow: 1px 1px 0 black;
+}
+
+.left{
+	border-right: 1px solid black;
+}
+
+.right .header-products{
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+.right .cover{
+width: 70%;
+margin-left: auto;
+margin-right: auto;
+}
+
+.left{
+	text-align: center;
+}
+
+.left ul{
+	list-style: none;
+	padding: 0;
+}
+
+.left ul li{
+	text-align: center;
+}
+
+.left a {
+	text-decoration: none;
+}
+
+.coverbox{
+	text-align: center;
+	margin-top: 15px;
+}
+
+.left h4{
+	margin-top: 25px;
+}
+
+.left h4:first-child{
+	margin-top: 0px;
+}
+
