@@ -25,7 +25,7 @@
              <div class="row">
                 {% for product in products %}
                         <div class="col-12 col-md-4">
-                            {{ product.image }}
+                            <img src="{{ product.image.url }}" class="img-fluid" />
                             <br/>
                             <h4>{{ product.title }}</h4>
                             {{ product.platform }}
