@@ -31,9 +31,7 @@ background-color: white;
 	text-shadow: 1px 1px 0 black;
 }
 
-.left{
-	border-right: 1px solid silver;
-}
+
 
 .right .header-products{
 	text-align: center;
@@ -67,14 +65,15 @@ margin-right: auto;
 	text-align: center;
 	margin-top: 15px;
 }
+.left .card:first-child{
+	margin-top: 0;
+}
 
 .left .card{
 	margin-top: 20px;
 }
 
-.left .card:first-child{
-	margin-top: 60px;
-}
+
 
 .left .card > .card-block{
 	margin-top: 10px;
@@ -86,6 +85,37 @@ margin-right: auto;
 -moz-box-shadow: 10px 10px 10px -1px rgba(122,122,122,0.41);
 box-shadow: 10px 10px 10px -1px rgba(122,122,122,0.41);
 
+}
+
+.left .login form{
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+.left .login form > input{
+	margin-top: 10px;
+	border-radius: 5px;
+	border: 1px solid silver;
+}
+
+.right .card nav {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.right .coverbox .effectbox{
+	transition: all 0.3s ease-in-out;
+}
+
+.right .coverbox .effectbox:hover{
+	-webkit-transform: scale(0.9);
+	-ms-transform: scale(0.9);
+	transform: scale(0.95);
+}
+
+.right a{
+	text-decoration: none;
+	color: black;
 }
 
 

@@ -40,7 +40,28 @@
 			
 			<div class="col-12 col-md-3 left">
 				<div class="row">
-				<div class ="col-md-12">
+				<div class ="col-md-12 leftnav">
+					
+					
+						
+						
+					<div class="card login">
+					
+					<div class="card-header">
+						<h4>Login</h4>
+					</div>
+					
+					<div class="card-block">
+					<form>
+						<input type="text" placeholder="Login" />
+						<br/>
+						<input type="text" placeholder="Password" />
+						<br/>
+						<input type="submit" value="Zaloguj się" />
+					</form>
+					</div>
+					</div>
+				
 					<div class="card">
 					
 					<div class="card-header">
@@ -86,36 +107,65 @@
 			</div>
 			
 
-              <div class="col -12 col-md-9 right">
+              <div class="col-12 col-md-9 right">
              <div class="row">
-				<div class="col-md-12 header-products">
+			 
+			 <div class="card">
+				
+				
+				<div class="card-header text-center" >
 					<h4>Games</h4>
 				</div>
 				
+				
+				
+				
+				<div class="card-block">
 				<div class="col-md-12">
 				<div class="row">
                 {% for product in products %}
                         <div class="col-12 col-md-4 coverbox" >
 							
 							<div class="card card-body text-center">
+							<a href="#">
+							<div class="effectbox">
 							<div class="cover">
 								<img src="{{ product.image.url }}" class="img-fluid" />
 							</div>
+							
                             
                             <h5>{{ product.title }}</h5>
                             {{ product.platform }}/{{ product.category }}
                             <br/>
                             {{ product.price }}zł
 							</div>
+							</div>
+							</a>
 						
 						</div>
+						
 				{% endfor %}
 				</div>
              </div>
               </div>
-			
+			  
+			    <nav>
+					<ul class="pagination">
+						<li class="page-item"><a class="page-link" href="#">Poprzedni</a></li>
+						<li class="page-item"><a class="page-link" href="#">1</a></li>
+						<li class="page-item active"><a class="page-link" href="#">2</a></li>
+						<li class="page-item"><a class="page-link" href="#">3</a></li>
+						<li class="page-item"><a class="page-link" href="#">Następny</a></li>
+					</ul>
+				</nav>
+				
+			  </div>
+			  
+			  </div>
 			
 			  </div>
+			  
+			 
 		</div>
 	</main>
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
