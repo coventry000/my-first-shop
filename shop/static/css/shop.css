@@ -1,9 +1,14 @@
+body{
+	background-color: #F1F1F1;
+}
+
 .topnav-container{
 	margin-bottom: 50px;
 }
 
 .logo{
 text-align: left;
+background-color: white;
 }
 
 .topnav{
@@ -27,7 +32,7 @@ text-align: left;
 }
 
 .left{
-	border-right: 1px solid black;
+	border-right: 1px solid silver;
 }
 
 .right .header-products{
@@ -80,5 +85,7 @@ margin-right: auto;
 -webkit-box-shadow: 10px 10px 10px -1px rgba(122,122,122,0.41);
 -moz-box-shadow: 10px 10px 10px -1px rgba(122,122,122,0.41);
 box-shadow: 10px 10px 10px -1px rgba(122,122,122,0.41);
+
 }
+
 

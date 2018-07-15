@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1d51beee-2166-422a-b806-64240434f23e" name="Default" comment="" />
+    <list default="true" id="1d51beee-2166-422a-b806-64240434f23e" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/shop/static/css/shop.css" beforeDir="false" afterPath="$PROJECT_DIR$/shop/static/css/shop.css" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -102,7 +104,7 @@
         <entry file="file://$PROJECT_DIR$/shop/static/css/shop.css">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="502">
-              <caret line="81" lean-forward="true" selection-start-line="81" selection-end-line="81" />
+              <caret line="87" lean-forward="true" selection-start-line="87" selection-end-line="87" />
             </state>
           </provider>
         </entry>
@@ -471,7 +473,7 @@
     <entry file="file://$PROJECT_DIR$/shop/static/css/shop.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="502">
-          <caret line="81" lean-forward="true" selection-start-line="81" selection-end-line="81" />
+          <caret line="87" lean-forward="true" selection-start-line="87" selection-end-line="87" />
         </state>
       </provider>
     </entry>
