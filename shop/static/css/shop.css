@@ -77,5 +77,8 @@ margin-right: auto;
 
 .right .card{
 	border-radius: 0px;
+-webkit-box-shadow: 10px 10px 10px -1px rgba(122,122,122,0.41);
+-moz-box-shadow: 10px 10px 10px -1px rgba(122,122,122,0.41);
+box-shadow: 10px 10px 10px -1px rgba(122,122,122,0.41);
 }
 
