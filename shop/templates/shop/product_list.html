@@ -41,8 +41,13 @@
 			<div class="col-12 col-md-3 left">
 				<div class="row">
 				<div class ="col-md-12">
-					<h4>Categories</h4>
+					<div class="card">
 					
+					<div class="card-header">
+						<h4>Categories</h4>
+					</div>
+					
+					<div class="card-block">
 					<ul>
 						<a href="#"><li>Action</li></a>
 						<a href="#"><li>Racing</li></a>
@@ -52,18 +57,31 @@
 						<a href="#"><li>FPS</li></a>
 						<a href="#"><li>Logic</li></a>
 						
-						<h4>Platform</h4>
+					</div>
+					</div>
+						
+						<div class="card">
+						
+						<div class="card-header">
+							<h4>Platform</h4>
+						</div>
+						
+						<div class="card-block">
+							<ul>
+								<a href="#"><li>Action</li></a>
+								<a href="#"><li>Racing</li></a>
+								<a href="#"><li>Fighting</li></a>
+								<a href="#"><li>Simulation</li></a>
+								<a href="#"><li>Shooter</li></a>
+								<a href="#"><li>FPS</li></a>
+								<a href="#"><li>Logic</li></a>
+							</ul>
+							
+					</div>
 					
-					<ul>
-						<a href="#"><li>Action</li></a>
-						<a href="#"><li>Racing</li></a>
-						<a href="#"><li>Fighting</li></a>
-						<a href="#"><li>Simulation</li></a>
-						<a href="#"><li>Shooter</li></a>
-						<a href="#"><li>FPS</li></a>
-						<a href="#"><li>Logic</li></a>
-					</ul>
-				</div>
+					</div>
+					</div>
+				
 				</div>
 			</div>
 			
@@ -76,15 +94,16 @@
                 {% for product in products %}
                         <div class="col-12 col-md-4 coverbox" >
 							
+							<div class="card card-body text-center">
 							<div class="cover">
 								<img src="{{ product.image.url }}" class="img-fluid" />
 							</div>
                             
-                            <h4>{{ product.title }}</h4>
+                            <h5>{{ product.title }}</h5>
                             {{ product.platform }}/{{ product.category }}
                             <br/>
                             {{ product.price }}zł
-                        
+							</div>
 						
 						</div>
 				{% endfor %}

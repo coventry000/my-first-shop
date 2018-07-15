@@ -63,11 +63,19 @@ margin-right: auto;
 	margin-top: 15px;
 }
 
-.left h4{
-	margin-top: 25px;
+.left .card{
+	margin-top: 20px;
 }
 
-.left h4:first-child{
-	margin-top: 0px;
+.left .card:first-child{
+	margin-top: 60px;
+}
+
+.left .card > .card-block{
+	margin-top: 10px;
+}
+
+.right .card{
+	border-radius: 0px;
 }
 
