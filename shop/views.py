@@ -16,7 +16,7 @@ def product_list(request):
     product_list = Product.objects.order_by("created_date")
     paginator = Paginator(product_list, 6)
 
-    page = request.GET.get("page")
+    page = request.GET.get("page", 1)
     products = paginator.page(page)
     return render(request,"shop/product_list.html", {"products": products})
 
