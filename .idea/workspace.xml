@@ -2,22 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1d51beee-2166-422a-b806-64240434f23e" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysite/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/static/css/fontello/config.json" beforeDir="false" afterPath="$PROJECT_DIR$/shop/static/css/fontello/config.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/static/css/fontello/css/fontello-codes.css" beforeDir="false" afterPath="$PROJECT_DIR$/shop/static/css/fontello/css/fontello-codes.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/static/css/fontello/css/fontello-embedded.css" beforeDir="false" afterPath="$PROJECT_DIR$/shop/static/css/fontello/css/fontello-embedded.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/static/css/fontello/css/fontello-ie7-codes.css" beforeDir="false" afterPath="$PROJECT_DIR$/shop/static/css/fontello/css/fontello-ie7-codes.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/static/css/fontello/css/fontello-ie7.css" beforeDir="false" afterPath="$PROJECT_DIR$/shop/static/css/fontello/css/fontello-ie7.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/static/css/fontello/css/fontello.css" beforeDir="false" afterPath="$PROJECT_DIR$/shop/static/css/fontello/css/fontello.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/static/css/fontello/font/fontello.eot" beforeDir="false" afterPath="$PROJECT_DIR$/shop/static/css/fontello/font/fontello.eot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/static/css/fontello/font/fontello.svg" beforeDir="false" afterPath="$PROJECT_DIR$/shop/static/css/fontello/font/fontello.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/static/css/fontello/font/fontello.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/shop/static/css/fontello/font/fontello.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/static/css/fontello/font/fontello.woff" beforeDir="false" afterPath="$PROJECT_DIR$/shop/static/css/fontello/font/fontello.woff" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/static/css/fontello/font/fontello.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/shop/static/css/fontello/font/fontello.woff2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/static/css/shop.css" beforeDir="false" afterPath="$PROJECT_DIR$/shop/static/css/shop.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/templates/shop/product_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/shop/templates/shop/product_list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/shop/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/shop/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/shop/views.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -86,8 +70,8 @@
       <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/shop/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="476">
-              <caret line="37" column="74" selection-start-line="37" selection-start-column="74" selection-end-line="37" selection-end-column="74" />
+            <state relative-caret-position="153">
+              <caret line="18" column="36" selection-start-line="18" selection-start-column="36" selection-end-line="18" selection-end-column="36" />
               <folding>
                 <element signature="e#0#35#0" expanded="true" />
               </folding>
@@ -160,6 +144,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -194,7 +179,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -233,6 +217,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20497803" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -681,8 +666,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/shop/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="37" column="74" selection-start-line="37" selection-start-column="74" selection-end-line="37" selection-end-column="74" />
+        <state relative-caret-position="153">
+          <caret line="18" column="36" selection-start-line="18" selection-start-column="36" selection-end-line="18" selection-end-column="36" />
           <folding>
             <element signature="e#0#35#0" expanded="true" />
           </folding>
