@@ -33,7 +33,7 @@ def search(request):
 
 
     page = request.GET.get("page")
-    products = paginator.get_page(page)
+    products = paginator.page(page)
 
     return render(request, template, {"products": products, "query": query})
 
