@@ -1,5 +1,5 @@
 body{
-	background-color: #F1F1F1;
+	background-color: #F1F1F1;;
 }
 
 .topnav-container{
@@ -13,7 +13,7 @@ background-color: white;
 
 .topnav{
 	background-color: #D0D0D0;
-	height: 50px;
+	min-height: 50px;
 }
 
 .topnav h5{
@@ -64,6 +64,7 @@ margin-right: auto;
 .coverbox{
 	text-align: center;
 	margin-top: 15px;
+
 }
 .left .card:first-child{
 	margin-top: 0;
@@ -84,6 +85,7 @@ margin-right: auto;
 -webkit-box-shadow: 10px 10px 10px -1px rgba(122,122,122,0.41);
 -moz-box-shadow: 10px 10px 10px -1px rgba(122,122,122,0.41);
 box-shadow: 10px 10px 10px -1px rgba(122,122,122,0.41);
+
 
 }
 
@@ -117,5 +119,61 @@ box-shadow: 10px 10px 10px -1px rgba(122,122,122,0.41);
 	text-decoration: none;
 	color: black;
 }
+
+.right > .row > .card{
+	min-height: 845.833px;
+}  
+
+.right > .row > .card nav{
+	position: absolute;
+	right: 50%;
+	bottom: 0;
+}
+
+.boxofproducts{
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.right .coverbox p{
+	font-weight: bold;
+	font-size: 16px;
+}
+
+.topnav .topnavcontainer .col-md-3 {
+	display: block;
+	margin-top: auto;
+	margin-bottom: auto;
+	
+}
+
+.topnav .topnavcontainer div input{
+	border-radius: 5px;
+	border: 1px solid silver;
+	
+	padding: 2px;
+	
+}
+
+.sticky{
+	width: 100%;
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index: 100;
+}
+
+.card-header{
+padding-top: 0;
+padding-bottom: 0;
+}
+
+h4{
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+
+
 
 

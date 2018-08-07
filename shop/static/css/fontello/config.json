@@ -7,10 +7,16 @@
   "ascent": 850,
   "glyphs": [
     {
-      "uid": "f5686c8ccdc0213b081ef95678160b6d",
+      "uid": "e126987944593dfee041f8e2a68145db",
       "css": "basket",
       "code": 59392,
-      "src": "elusive"
+      "src": "entypo"
+    },
+    {
+      "uid": "9dd9e835aebe1060ba7190ad2b2ed951",
+      "css": "search",
+      "code": 59393,
+      "src": "fontawesome"
     }
   ]
 }

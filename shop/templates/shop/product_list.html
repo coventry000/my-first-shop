@@ -27,7 +27,24 @@
 						</div>
 						
 						<div class="col-12 col-md-12 topnav">
+						
+
+						<div class="topnavcontainer row">
+						
+						<div class="col-12 col-md-3">
+						<form id="searchform"   method="GET" action="{% url 'shop:search' %}" accept-charset="utf-8">
+							<input class="searchfield" id="searchbox" name="q" type="text" placeholder="search" value="{{request.GET.q}}" / >
+							<button class="searchbutton" type="submit" style="border: 1px solid silver; border-radius: 5px; padding-top: 2px; padding-bottom: 2px;">
+								<i class="icon-search fa fa-search"></i>
+							</button>
+						</form>
+						</div>
+						
+						<div class="col-12 col-md-9 ">
 							<a href="#"><h5>Your cart is empty <i class="icon-basket"></i></h5></a>
+						</div>
+							
+						</div>
 							
 						</div>
 				</div>
@@ -110,7 +127,7 @@
               <div class="col-12 col-md-9 right">
              <div class="row">
 			 
-			 <div class="card">
+			 <div class="card col-md-12" style="padding: 0;">
 				
 				
 				<div class="card-header text-center" >
@@ -120,8 +137,8 @@
 				
 				
 				
-				<div class="card-block">
-				<div class="col-md-12">
+				<div class="card-block" >
+				<div class="col-md-12 boxofproducts" >
 				<div class="row">
                 {% for product in products %}
                         <div class="col-12 col-md-4 coverbox" >
@@ -134,7 +151,7 @@
 							</div>
 							
                             
-                            <h5>{{ product.title }}</h5>
+                            <p>{{ product.title }}</p>
                             {{ product.platform }}/{{ product.category }}
                             <br/>
                             {{ product.price }}zł
@@ -148,17 +165,18 @@
 				</div>
              </div>
               </div>
-			  
+
+			
 			    <nav>
 					<ul class="pagination">
-						<li class="page-item"><a class="page-link" href="#">Poprzedni</a></li>
-						<li class="page-item"><a class="page-link" href="#">1</a></li>
-						<li class="page-item active"><a class="page-link" href="#">2</a></li>
-						<li class="page-item"><a class="page-link" href="#">3</a></li>
-						<li class="page-item"><a class="page-link" href="#">Następny</a></li>
+						{% for i in products.paginator.page_range %}
+
+						<li class="page-item"><a class="page-link" href="?page={{ i }}{% if query %}&q={{query}}{% endif %}">{{ i }}</a></li>
+
+						{% endfor %}
 					</ul>
 				</nav>
-				
+
 			  </div>
 			  
 			  </div>
@@ -167,6 +185,31 @@
 			  
 			 
 		</div>
+		
+		<script src="{% static 'javascript/jquery-3.3.1.min.js' %}"></script>
+		
+		<script>
+			$(document).ready(function() {
+			var NavY = $('.topnav').offset().top;
+			
+			var stickyNav = function(){
+			var ScrollY = $(window).scrollTop();
+			
+			if (ScrollY > NavY){
+			$('.topnav').addClass('sticky');
+			}else {
+			$('.topnav').removeClass('sticky');
+			}
+			};
+			
+			stickyNav();
+			
+			$(window).scroll(function(){
+			stickyNav();
+			});
+			});
+		</script>
+		
 	</main>
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>

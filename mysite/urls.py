@@ -19,9 +19,10 @@ from django.contrib import admin
 from django.conf import settings
 from django.views.static import serve
 
+
 urlpatterns = [
     url('admin/', admin.site.urls),
-    url(r'', include("shop.urls"))
+    url(r'', include("shop.urls", namespace="shop") )
 ]
 
 if settings.DEBUG:
